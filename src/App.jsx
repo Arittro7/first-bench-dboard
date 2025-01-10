@@ -8,17 +8,22 @@ import Result from './Components/ResultSection/Result'
 function App() {
 
   return (
-    <div className='min-h-screen bg-gray-200'>
+    <div>
       <Navbar></Navbar>
-      <div className='container mx-auto flex px-4 py-6 h-screen gap-4'>
-        <div className='w-2/12 '>
+      <div className='bg-gray-100'>
+      <div className=" mx-auto flex flex-col md:flex-row px-4 py-6 h-screen gap-4">
+        {/* Left Section */}
+        <div className="md:w-3/12 lg:w-2/12 w-full">
           <Result></Result>
         </div>
-        <div className='w-10/12 flex flex-col space-y-3'> 
+
+        {/* Right Section */}
+        <div className="md:w-9/12 lg:w-10/12 w-full flex flex-col space-y-3">
           <Accuracy></Accuracy>
           <Improvement></Improvement>
           <Graph></Graph>
         </div>
+      </div>
       </div>
     </div>
   )
