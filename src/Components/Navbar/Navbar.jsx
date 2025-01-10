@@ -57,8 +57,8 @@ const Navbar = () => {
         </div>
         {/* Logo */}
         <div className="flex items-center ml-4 lg:ml-20">
-          <img className="w-8" src={logo} alt="logo" />
-          <a className=" hidden sm:inline btn btn-ghost text-xl -ml-4 ">Firstbench</a>
+          <img className="w-8 " src={logo} alt="logo" />
+          <a className=" btn btn-ghost text-xl -ml-4 ">Firstbench</a>
         </div>
       </div>
 
@@ -88,7 +88,7 @@ const Navbar = () => {
             src={proImg}
             alt="profile"
           />
-          <button className="text-sm font-medium">Profile</button>
+          <button className="text-sm hidden sm:inline font-medium">Profile</button>
           <IoIosArrowDown className="text-sm" />
         </div>
       </div>
